@@ -61,7 +61,7 @@ const fetchISSFlyOverTimes = function(coords, callback) {
  *   - An error, if any (nullable)
  *   - The fly-over times as an array (null if error):
  *     [ { risetime: <number>, duration: <number> }, ... ]
- */
+ */ 
 const nextISSTimesForMyLocation = callback => {
   fetchMyIP((error, ip) => {
     if (error) return callback(error, null);
